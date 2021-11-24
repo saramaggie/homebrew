@@ -1,0 +1,743 @@
+{
+	"siteVersion": "1.142.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "LiviningSpells",
+				"abbreviation": "LS",
+				"full": "Livining Spells",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1637758820,
+		"dateLastModified": 1637758820
+	},
+	"monster": [
+		{
+			"name": "Living Destructive Wave",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 73,
+				"formula": "7d10 + 35"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 20,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 10 ft., one target. {@h}22 ({@damage 5d6 + 5}) thunder damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"The living spell strikes the ground, creating a burst of divine energy that ripples outward from it. Each creature it chooses within 30 feet of itself must succeed on a Constitution saving throw or take {@damage 5d6} thunder damage, as well as {@damage 5d6} radiant or necrotic damage (the spell's choice), and be knocked {@condition prone}. A creature that succeeds on its saving throw takes half as much damage and isn’t knocked {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a rolling rippling sheet of golden and purple energy, alternative with each motion."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"T"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Living Flame Strike",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 73,
+				"formula": "7d10 + 35"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 20,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"radiant"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 10 ft., one target. {@h}12 ({@damage 2d6 + 5}) fire damage and {@h}12 ({@damage 2d6 + 5}) radiant damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"A vertical column of divine fire roars down from the heavens in a location the living spell specifies within 60 feet of itself. Each creature in a 10-foot-radius, 40-foot-high cylinder centred on a point within range must make a {@dc 15} Dexterity saving throw. A creature takes {@damage 4d6} fire damage and {@damage 4d6} radiant damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a roiling column of flame. The faces of various reptilian creatures can sometimes be seen inside."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"F",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Living Call Lightning",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 57,
+				"formula": "6d10 + 24"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d10 + 4}) lightning damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centred on a point the living spell can see within range directly above itself. The effect fails if the living spell can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).",
+						"When the living spell activates this effect, it chooses a point it can see under the cloud. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a {@dc 15} Dexterity saving throw. A creature takes {@damage 3d10} lightning damage on a failed save, or half as much damage on a successful one. On each of its turns, until the effect ends (1 minute, requiring concentration), it can use its action to call down lightning in this way again, targeting the same point or a different one.",
+						"If the living spell is outdoors in stormy conditions when it cast triggers this effect, the effect gives itself control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by {@damage 1d10}."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a storm cloud roiling along the ground on tendrils of lightning."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Living Hunger of Hadar",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 57,
+				"formula": "6d10 + 24"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"cold"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) cold damage and {@h}11 ({@damage 2d6 + 4}) acid damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"The living spell opens a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centred on a point within 120 feet and lasting for 1 minute. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}.",
+						"The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes {@damage 2d6} cold damage. Any creature that ends its turn in the area must succeed on a {@dc 15} Dexterity saving throw or take {@damage 2d6} acid damage as milky, otherworldly tentacles rub against it."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a swirling void of blackness and stars, with tentacles occasionally probing the air around."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"C"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Living Spirit Guardian (Necrotic)",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 57,
+				"formula": "6d10 + 24"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 10 ft., one target. {@h}21 ({@damage 5d6 + 4}) lightning damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"The living spell calls forth spirits to protect itself. They flit around the living spell to a distance of 15 feet for 1 minute. They appear fiendish.",
+						"When it activates this effect, it can designate any number of creatures it can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a {@dc 15} Wisdom saving throw. On a failed save, the creature takes {@damage 3d8} necrotic damage. On a successful save, the creature takes half as much damage"
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a fiendish spirit flitting about the battlefield."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"L"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Living Wind Wall",
+			"source": "LiviningSpells",
+			"page": 299,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 57,
+				"formula": "6d10 + 24"
+			},
+			"speed": {
+				"walk": 25,
+				"fly": 25
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The living spell can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The living spell has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The living spell makes two Magical Strike attacks."
+					]
+				},
+				{
+					"name": "Magical Strike",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 10 ft., one target. {@h}18 ({@damage 3d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spell Mimicry {@recharge 5}",
+					"entries": [
+						"A wall of strong wind rises from the ground at a point the living spell chooses within 120 feet of itself. It can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. The living spell can shape the wall in any way it chooses so long as it makes one continuous path along the ground. The wall lasts for the duration of 1 minute, requiring concentration.",
+						"When the wall appears, each creature within its area must make a Strength saving throw. A creature takes {@damage 3d8} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+						"The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A Living Spell that looks like a moving, serpentine wind storm filled with dust and small stones."
+				]
+			},
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
